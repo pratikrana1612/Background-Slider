@@ -7,13 +7,14 @@ body{
     height:100vh;
     margin:0;
     padding:0;
-    background: url(img.jpg) repeat #ffffffe6 ;
+    background: url(Images/img1.jpg) ;
     background-size: cover;
     background-position: center;
     display: flex;
     align-items: center;
     justify-content: center;
     position:relative;
+    /* transition: 0.4s; */
 }
 body::before{
     content:'';
@@ -34,11 +35,13 @@ section{
 }
 .img
 {
-    background: url(img.jpg);
-    background-size: cover;
-    background-position: center;
+    background: url(Images/img1.jpg);
+    background-size: 100% auto;
+    /* background-position: center; */
     width:60vw;
     height:70vh;
+    /* transition: background 0.4s ease; */
+    /* transition:0.5s linear; */
 }
 .fas
 {
@@ -49,4 +52,5 @@ button{
     height:60px;
     background:transparent;
     border:2px solid gold;
+    cursor:pointer;
 }
