@@ -27,7 +27,5 @@ preBtn.addEventListener('click',() =>
 
 function backgroundChnage (tag) 
 {
-    tag.style.background = `url(Images/img${index}.jpg)`
-    tag.style['background-size']='100% auto';
-    tag.style['background-position']='center';
+    tag.style.backgroundImage = `url(Images/img${index}.jpg)`
 }

@@ -7,7 +7,7 @@ body{
     height:100vh;
     margin:0;
     padding:0;
-    background: url(Images/img1.jpg) ;
+    background-image: url(Images/img1.jpg) ;
     background-size: cover;
     background-position: center;
     display: flex;
@@ -35,9 +35,9 @@ section{
 }
 .img
 {
-    background: url(Images/img1.jpg);
-    background-size: 100% auto;
-    /* background-position: center; */
+    background-image: url(Images/img1.jpg);
+    background-size: cover;
+    background-position: center;
     width:60vw;
     height:70vh;
     /* transition: background 0.4s ease; */
