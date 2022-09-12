@@ -6,23 +6,38 @@ let index=1;
 nextBtn.addEventListener('click',()=>
 {
     index++;
-    if(index==6)
+    if(index===6)
     {
         index=1;
+        const activeDiv = document.querySelector('.active');
+        activeDiv.classList.remove('active');
+        document.querySelector('.container .img1').classList.add('active')
+        backgroundChnage(body);
     }
-    backgroundChnage(imgDiv);
-    backgroundChnage(body);
+    else{
+        const activeDiv = document.querySelector('.active');
+        activeDiv.nextElementSibling.classList.add('active');
+        activeDiv.classList.remove('active');
+        backgroundChnage(body);
+    }
 })
-
 preBtn.addEventListener('click',() =>
 {
     index--;
-    if(index == 0)
+    if(index===0)
     {
         index=5;
+        const activeDiv = document.querySelector('.active');
+        activeDiv.classList.remove('active');
+        document.querySelector('.container .img5').classList.add('active')
+        backgroundChnage(body);
     }
-    backgroundChnage(imgDiv);
-    backgroundChnage(body);
+    else{
+        const activeDiv = document.querySelector('.active');
+        activeDiv.previousElementSibling.classList.add('active');
+        activeDiv.classList.remove('active');
+        backgroundChnage(body);
+    }
 })
 
 function backgroundChnage (tag) 
